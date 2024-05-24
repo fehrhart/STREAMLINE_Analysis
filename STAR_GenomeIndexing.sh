@@ -8,7 +8,7 @@
 #SBATCH --mail-type=END # send email at job completion
 #SBATCH --mail-user=m.kouhsar@exeter.ac.uk # email address
 
-
+export PATH=$PATH:root/persistent/software/STAR-2.7.11b/source
 # loading STAR software
 module load STAR
 
