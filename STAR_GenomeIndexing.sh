@@ -7,6 +7,6 @@ module load STAR
 STAR --runThreadN 50 \ 
      --runMode genomeGenerate \
      --genomeDir ./STAR_OutPut/ \
-     --genomeFastaFiles ./S \
+     --genomeFastaFiles ./S/ \
      --sjdbGTFfile ./gencode.v45.annotation.gtf \
      --sjdbOverhang 150\
