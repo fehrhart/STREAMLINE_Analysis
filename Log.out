@@ -1,0 +1,766 @@
+STAR version=2.7.11b
+STAR compilation time,server,dir=2024-03-27T11:50:55+00:00 ubuntu-1-nl4mn:/root/persistent/software/STAR-2.7.11b/source
+STAR git: 
+##### Command Line:
+/root/persistent/software/STAR-2.7.11b/source/STAR --runThreadN 120 --quantMode GeneCounts --genomeDir /root/persistent/STAR_OutPut/ --outSAMtype None --outFileNamePrefix /root/persistent/Results/. --readFilesIn /root/persistent/S/control_line_p2_3_S88_L002_R1_001.fastq.gz /root/persistent/S/control_line_p2_3_S88_L002_R2_001.fastq.gz --readFilesCommand zcat --alignSJoverhangMin 8 --alignSJDBoverhangMin 1 --outFilterMultimapNmax 20 --genomeLoad LoadAndKeep --limitBAMsortRAM 50000000000 --outFilterScoreMinOverLread 0.5 --outFilterMatchNminOverLread 0.5
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 /root/persistent/Results/.
+###### All USER parameters from Command Line:
+runThreadN                    120     ~RE-DEFINED
+quantMode                     GeneCounts        ~RE-DEFINED
+genomeDir                     /root/persistent/STAR_OutPut/     ~RE-DEFINED
+outSAMtype                    None        ~RE-DEFINED
+outFileNamePrefix             /root/persistent/Results/.     ~RE-DEFINED
+readFilesIn                   /root/persistent/S/control_line_p2_3_S88_L002_R1_001.fastq.gz   /root/persistent/S/control_line_p2_3_S88_L002_R2_001.fastq.gz        ~RE-DEFINED
+readFilesCommand              zcat        ~RE-DEFINED
+alignSJoverhangMin            8     ~RE-DEFINED
+alignSJDBoverhangMin          1     ~RE-DEFINED
+outFilterMultimapNmax         20     ~RE-DEFINED
+genomeLoad                    LoadAndKeep     ~RE-DEFINED
+limitBAMsortRAM               50000000000     ~RE-DEFINED
+outFilterScoreMinOverLread    0.5     ~RE-DEFINED
+outFilterMatchNminOverLread   0.5     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runThreadN                        120
+genomeDir                         /root/persistent/STAR_OutPut/
+genomeLoad                        LoadAndKeep
+readFilesIn                       /root/persistent/S/control_line_p2_3_S88_L002_R1_001.fastq.gz   /root/persistent/S/control_line_p2_3_S88_L002_R2_001.fastq.gz   
+readFilesCommand                  zcat   
+limitBAMsortRAM                   50000000000
+outFileNamePrefix                 /root/persistent/Results/.
+outSAMtype                        None   
+outFilterMultimapNmax             20
+outFilterScoreMinOverLread        0.5
+outFilterMatchNminOverLread       0.5
+alignSJoverhangMin                8
+alignSJDBoverhangMin              1
+quantMode                         GeneCounts   
+
+-------------------------------
+##### Final effective command line:
+/root/persistent/software/STAR-2.7.11b/source/STAR   --runThreadN 120   --genomeDir /root/persistent/STAR_OutPut/   --genomeLoad LoadAndKeep   --readFilesIn /root/persistent/S/control_line_p2_3_S88_L002_R1_001.fastq.gz   /root/persistent/S/control_line_p2_3_S88_L002_R2_001.fastq.gz      --readFilesCommand zcat      --limitBAMsortRAM 50000000000   --outFileNamePrefix /root/persistent/Results/.   --outSAMtype None      --outFilterMultimapNmax 20   --outFilterScoreMinOverLread 0.5   --outFilterMatchNminOverLread 0.5   --alignSJoverhangMin 8   --alignSJDBoverhangMin 1   --quantMode GeneCounts   
+----------------------------------------
+
+Number of fastq files for each mate = 1
+
+   Input read files for mate 1 :
+-rw-r--r--. 1 root root 871016144 Feb  9 04:32 /root/persistent/S/control_line_p2_3_S88_L002_R1_001.fastq.gz
+
+   readsCommandsFile:
+exec > "/root/persistent/Results/._STARtmp/tmp.fifo.read1"
+echo FILE 0
+zcat      "/root/persistent/S/control_line_p2_3_S88_L002_R1_001.fastq.gz"
+
+
+   Input read files for mate 2 :
+-rw-r--r--. 1 root root 868577261 Feb  9 04:32 /root/persistent/S/control_line_p2_3_S88_L002_R2_001.fastq.gz
+
+   readsCommandsFile:
+exec > "/root/persistent/Results/._STARtmp/tmp.fifo.read2"
+echo FILE 0
+zcat      "/root/persistent/S/control_line_p2_3_S88_L002_R2_001.fastq.gz"
+
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+Finished loading and checking parameters
+Reading genome generation parameters:
+### ./STAR   --runMode genomeGenerate      --runThreadN 50   --genomeDir /root/persistent/STAR_OutPut/   --genomeFastaFiles /root/persistent/GRCh37.p13.genome.fa      --sjdbGTFfile /root/persistent/gencode.v45.annotation.gtf   --sjdbOverhang 150
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              /root/persistent/GRCh37.p13.genome.fa        ~RE-DEFINED
+genomeSAindexNbases           14     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  150     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   /root/persistent/gencode.v45.annotation.gtf     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               3398027067   25660859238        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 297
+1	chr1	249250621	0
+2	chr2	243199373	249298944
+3	chr3	198022430	492568576
+4	chr4	191154276	690749440
+5	chr5	180915260	882114560
+6	chr6	171115067	1063256064
+7	chr7	159138663	1234436096
+8	chr8	146364022	1393819648
+9	chr9	141213431	1540358144
+10	chr10	135534747	1681653760
+11	chr11	135006516	1817444352
+12	chr12	133851895	1952710656
+13	chr13	115169878	2086666240
+14	chr14	107349540	2202009600
+15	chr15	102531392	2309488640
+16	chr16	90354753	2412249088
+17	chr17	81195210	2502688768
+18	chr18	78077248	2583953408
+19	chr19	59128983	2662072320
+20	chr20	63025520	2721316864
+21	chr21	48129895	2784493568
+22	chr22	51304566	2832728064
+23	chrX	155270560	2884108288
+24	chrY	59373566	3039559680
+25	chrM	16569	3099066368
+26	GL877870.2	66021	3099328512
+27	GL877872.1	297485	3099590656
+28	GL383535.1	429806	3100114944
+29	JH159133.1	266316	3100639232
+30	KB663606.1	305900	3101163520
+31	KB021647.1	1058686	3101687808
+32	KE332497.1	543325	3102998528
+33	JH159131.1	393769	3103784960
+34	GL949745.1	372609	3104309248
+35	JH720447.1	454385	3104833536
+36	GL582968.1	356330	3105357824
+37	JH720446.1	97345	3105882112
+38	JH591181.2	2281126	3106144256
+39	JH720443.2	408430	3108503552
+40	JH159134.2	3821770	3109027840
+41	JH636052.4	7283150	3112960000
+42	JH636053.3	1676126	3120300032
+43	JH636054.1	758378	3122135040
+44	JH636056.1	262912	3122921472
+45	JH636058.1	716227	3123445760
+46	JH636057.1	200195	3124232192
+47	KE332505.1	579598	3124494336
+48	JH720451.1	898979	3125280768
+49	JH720452.1	522319	3126329344
+50	JH720453.1	1461188	3126853632
+51	JH720454.3	752267	3128426496
+52	JH159136.1	200998	3129212928
+53	JH806587.1	4110759	3129475072
+54	JH806588.1	862483	3133669376
+55	JH806589.1	270630	3134717952
+56	JH806590.2	2418393	3135242240
+57	JH806591.1	882083	3137863680
+58	JH806592.1	835911	3138912256
+59	JH806593.1	389631	3139960832
+60	JH806594.1	390496	3140485120
+61	JH806595.1	444074	3141009408
+62	JH806596.1	413927	3141533696
+63	JH806597.1	1045622	3142057984
+64	JH720448.1	70483	3143106560
+65	JH806598.1	899320	3143368704
+66	JH806599.1	1214327	3144417280
+67	JH806600.2	6530008	3145728000
+68	JH806601.1	1389764	3152281600
+69	JH806602.1	713266	3153854464
+70	JH806573.1	24680	3154640896
+71	JH806574.2	22982	3154903040
+72	JH806575.1	47409	3155165184
+73	JH806580.1	93149	3155427328
+74	JH806583.1	167183	3155689472
+75	JH806584.1	70876	3155951616
+76	JH806585.1	73505	3156213760
+77	JH806603.1	182949	3156475904
+78	JH159150.3	3110903	3156738048
+79	GL582969.1	251823	3159883776
+80	JH806577.1	22394	3160145920
+81	JH806578.1	169437	3160408064
+82	JH806579.1	211307	3160670208
+83	JH159137.1	191409	3160932352
+84	KE332502.1	341712	3161194496
+85	KB021645.1	1523386	3161718784
+86	KB663607.2	334922	3163291648
+87	KE332500.1	228602	3163815936
+88	KE332496.1	503215	3164078080
+89	GL383558.1	457041	3164602368
+90	GL582976.1	412535	3165126656
+91	GL383523.1	171362	3165650944
+92	KE332498.1	149443	3165913088
+93	GL949743.1	608579	3166175232
+94	KE332506.1	307252	3166961664
+95	GL383536.1	203777	3167485952
+96	JH591184.1	462282	3167748096
+97	JH636061.1	186059	3168272384
+98	JH806576.1	273386	3168534528
+99	GL383524.1	78793	3169058816
+100	GL582973.1	321004	3169320960
+101	JH159138.1	108875	3169845248
+102	KB021648.1	469972	3170107392
+103	JH159139.1	120441	3170631680
+104	JH159140.1	546435	3170893824
+105	JH591182.1	196262	3171680256
+106	JH159132.1	100694	3171942400
+107	JH720449.1	212298	3172204544
+108	JH591183.1	177920	3172466688
+109	JH720444.2	273128	3172728832
+110	JH159141.2	240775	3173253120
+111	KB663604.1	478993	3173515264
+112	JH720455.1	65034	3174039552
+113	KB021646.2	211416	3174301696
+114	JH159142.2	326647	3174563840
+115	JH159143.1	191402	3175088128
+116	JH806582.2	342635	3175350272
+117	JH159135.2	102251	3175874560
+118	KE332499.1	274521	3176136704
+119	GL877877.2	284527	3176660992
+120	JH806586.1	43543	3177185280
+121	GL582979.2	179899	3177447424
+122	KB663605.1	155926	3177709568
+123	GL582975.1	34662	3177971712
+124	GL949744.1	276448	3178233856
+125	GL383543.1	392792	3178758144
+126	GL877871.1	389939	3179282432
+127	GL582967.1	248177	3179806720
+128	JH159149.1	245473	3180068864
+129	GL582977.2	580393	3180331008
+130	GL582970.1	354970	3181117440
+131	GL383559.2	338640	3181641728
+132	JH159144.1	388340	3182166016
+133	JH591186.1	376223	3182690304
+134	GL383560.1	534288	3183214592
+135	GL339450.1	330164	3184001024
+136	GL582971.1	1284284	3184525312
+137	GL582974.1	163298	3185836032
+138	JH806581.1	872115	3186098176
+139	JH636060.1	437946	3187146752
+140	JH591185.1	167437	3187671040
+141	JH159145.1	194862	3187933184
+142	GL877873.1	168465	3188195328
+143	KB663608.1	283551	3188457472
+144	GL582972.1	327774	3188981760
+145	KB663603.1	599580	3189506048
+146	KE332495.1	263861	3190292480
+147	JH636059.1	295379	3190816768
+148	JH720445.1	170033	3191341056
+149	KE332501.1	1020827	3191603200
+150	GL383561.2	644425	3192651776
+151	GL949741.1	151551	3193438208
+152	GL383562.1	45551	3193700352
+153	GL383525.1	65063	3193962496
+154	GL383544.1	128378	3194224640
+155	GL383548.1	165247	3194486784
+156	GL383537.1	62435	3194748928
+157	GL383538.1	49281	3195011072
+158	GL383516.1	49316	3195273216
+159	GL383517.1	49352	3195535360
+160	GL383545.1	179254	3195797504
+161	GL383546.1	309802	3196059648
+162	GL383547.1	154407	3196583936
+163	GL877875.1	167313	3196846080
+164	GL383549.1	120804	3197108224
+165	GL383550.1	169178	3197370368
+166	GL383551.1	184319	3197632512
+167	GL877876.1	408271	3197894656
+168	GL383552.1	138655	3198418944
+169	GL383553.2	152874	3198681088
+170	GL383554.1	296527	3198943232
+171	GL383555.1	388773	3199467520
+172	GL383556.1	192462	3199991808
+173	GL383557.1	89672	3200253952
+174	GL000258.1	1680828	3200516096
+175	GL383563.2	270261	3202351104
+176	GL383564.1	133151	3202875392
+177	GL383565.1	223995	3203137536
+178	GL383566.1	90219	3203399680
+179	JH159146.1	278131	3203661824
+180	JH159147.1	70345	3204186112
+181	JH159148.1	88070	3204448256
+182	GL383567.1	289831	3204710400
+183	GL383568.1	104552	3205234688
+184	GL383569.1	167950	3205496832
+185	GL383570.1	164789	3205758976
+186	GL383571.1	198278	3206021120
+187	GL383572.1	159547	3206283264
+188	GL949746.1	987716	3206545408
+189	GL949747.1	729519	3207593984
+190	GL949748.1	1064303	3208380416
+191	GL949749.1	1091840	3209691136
+192	GL949750.1	1066389	3211001856
+193	GL949751.1	1002682	3212312576
+194	GL949752.1	987100	3213361152
+195	GL949753.1	796478	3214409728
+196	GL383573.1	385657	3215458304
+197	GL383574.1	155864	3215982592
+198	GL383575.2	170222	3216244736
+199	GL383576.1	188024	3216506880
+200	GL383518.1	182439	3216769024
+201	GL383519.1	110268	3217031168
+202	GL383520.1	366579	3217293312
+203	GL383577.1	128385	3217817600
+204	GL383578.1	63917	3218079744
+205	GL383579.1	201198	3218341888
+206	GL383580.1	74652	3218604032
+207	GL383581.1	116690	3218866176
+208	GL383582.2	162811	3219128320
+209	GL383583.1	96924	3219390464
+210	KB663609.1	74013	3219652608
+211	GL383521.1	143390	3219914752
+212	GL383522.1	123821	3220176896
+213	GL582966.2	96131	3220439040
+214	JH636055.1	173151	3220701184
+215	GL383526.1	180671	3220963328
+216	GL000257.1	590426	3221225472
+217	GL383527.1	164536	3222011904
+218	GL383528.1	376187	3222274048
+219	GL383529.1	121345	3222798336
+220	GL339449.2	1612928	3223060480
+221	GL383530.1	101241	3224895488
+222	GL383531.1	173459	3225157632
+223	GL383532.1	82728	3225419776
+224	GL949742.1	226852	3225681920
+225	GL383533.1	124736	3225944064
+226	KB021644.1	187824	3226206208
+227	GL000250.1	4622290	3226468352
+228	GL000251.1	4795371	3231186944
+229	GL000252.1	4610396	3236167680
+230	GL000253.1	4683263	3240886272
+231	GL000254.1	4833398	3245604864
+232	GL000255.1	4611984	3250585600
+233	GL000256.1	4928567	3255304192
+234	GL383534.2	119183	3260284928
+235	GL383539.1	162988	3260547072
+236	GL383540.1	71551	3260809216
+237	GL383541.1	171286	3261071360
+238	GL383542.1	60032	3261333504
+239	GL000191.1	106433	3261595648
+240	GL000192.1	547496	3261857792
+241	GL000193.1	189789	3262644224
+242	GL000194.1	191469	3262906368
+243	GL000195.1	182896	3263168512
+244	GL000196.1	38914	3263430656
+245	GL000197.1	37175	3263692800
+246	GL000198.1	90085	3263954944
+247	GL000199.1	169874	3264217088
+248	GL000200.1	187035	3264479232
+249	GL000201.1	36148	3264741376
+250	GL000202.1	40103	3265003520
+251	GL000203.1	37498	3265265664
+252	GL000204.1	81310	3265527808
+253	GL000205.1	174588	3265789952
+254	GL000206.1	41001	3266052096
+255	GL000207.1	4262	3266314240
+256	GL000208.1	92689	3266576384
+257	GL000209.1	159169	3266838528
+258	GL000210.1	27682	3267100672
+259	GL000211.1	166566	3267362816
+260	GL000212.1	186858	3267624960
+261	GL000213.1	164239	3267887104
+262	GL000214.1	137718	3268149248
+263	GL000215.1	172545	3268411392
+264	GL000216.1	172294	3268673536
+265	GL000217.1	172149	3268935680
+266	GL000218.1	161147	3269197824
+267	GL000219.1	179198	3269459968
+268	GL000220.1	161802	3269722112
+269	GL000221.1	155397	3269984256
+270	GL000222.1	186861	3270246400
+271	GL000223.1	180455	3270508544
+272	GL000224.1	179693	3270770688
+273	GL000225.1	211173	3271032832
+274	GL000226.1	15008	3271294976
+275	GL000227.1	128374	3271557120
+276	GL000228.1	129120	3271819264
+277	GL000229.1	19913	3272081408
+278	GL000230.1	43691	3272343552
+279	GL000231.1	27386	3272605696
+280	GL000232.1	40652	3272867840
+281	GL000233.1	45941	3273129984
+282	GL000234.1	40531	3273392128
+283	GL000235.1	34474	3273654272
+284	GL000236.1	41934	3273916416
+285	GL000237.1	45867	3274178560
+286	GL000238.1	39939	3274440704
+287	GL000239.1	33824	3274702848
+288	GL000240.1	41933	3274964992
+289	GL000241.1	42152	3275227136
+290	GL000242.1	43523	3275489280
+291	GL000243.1	43341	3275751424
+292	GL000244.1	39929	3276013568
+293	GL000245.1	36651	3276275712
+294	GL000246.1	38154	3276537856
+295	GL000247.1	36422	3276800000
+296	GL000248.1	39786	3277062144
+297	GL000249.1	38502	3277324288
+--sjdbOverhang = 150 taken from the generated genome
+Started loading the genome: Fri May 24 21:37:05 2024
+
+Genome: size given as a parameter = 3398027067
+SA: size given as a parameter = 25660859238
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=14  nSAi=357913940
+nGenome=3398027067;  nSAbyte=25660859238
+GstrandBit=32   SA number of indices=6220814360
+Found genome in shared memory
+Using shared memory for genome. key=0xebcc474;   shmid=229432
+Finished loading the genome: Fri May 24 21:37:05 2024
+
+Processing splice junctions database sjdbN=400135,   pGe.sjdbOverhang=150 
+alignIntronMax=alignMatesGapMax=0, the max intron size will be approximately determined by (2^winBinNbits)*winAnchorDistNbins=589824
+Created thread # 1
+Starting to map file # 0
+mate 1:   /root/persistent/S/control_line_p2_3_S88_L002_R1_001.fastq.gz
+mate 2:   /root/persistent/S/control_line_p2_3_S88_L002_R2_001.fastq.gz
+Created thread # 2
+Created thread # 3
+Created thread # 4
+Created thread # 5
+Created thread # 6
+Created thread # 7
+Created thread # 8
+Created thread # 9
+Created thread # 10
+Created thread # 11
+Created thread # 12
+Created thread # 13
+Created thread # 14
+Created thread # 15
+Created thread # 16
+Created thread # 17
+Created thread # 18
+Created thread # 19
+Created thread # 20
+Created thread # 21
+Created thread # 22
+Created thread # 23
+Created thread # 24
+Created thread # 25
+Created thread # 26
+Created thread # 27
+Created thread # 28
+Created thread # 29
+Created thread # 30
+Created thread # 31
+Created thread # 32
+Created thread # 33
+Created thread # 34
+Created thread # 35
+Created thread # 36
+Created thread # 37
+Created thread # 38
+Created thread # 39
+Created thread # 40
+Created thread # 41
+Created thread # 42
+Created thread # 43
+Created thread # 44
+Created thread # 45
+Created thread # 46
+Created thread # 47
+Created thread # 48
+Created thread # 49
+Created thread # 50
+Created thread # 51
+Created thread # 52
+Created thread # 53
+Created thread # 54
+Created thread # 55
+Created thread # 56
+Created thread # 57
+Created thread # 58
+Created thread # 59
+Created thread # 60
+Created thread # 61
+Created thread # 62
+Created thread # 63
+Created thread # 64
+Created thread # 65
+Created thread # 66
+Created thread # 67
+Created thread # 68
+Created thread # 69
+Created thread # 70
+Created thread # 71
+Created thread # 72
+Created thread # 73
+Created thread # 74
+Created thread # 75
+Created thread # 76
+Created thread # 77
+Created thread # 78
+Created thread # 79
+Created thread # 80
+Created thread # 81
+Created thread # 82
+Created thread # 83
+Created thread # 84
+Created thread # 85
+Created thread # 86
+Created thread # 87
+Created thread # 88
+Created thread # 89
+Created thread # 90
+Created thread # 91
+Created thread # 92
+Created thread # 93
+Created thread # 94
+Created thread # 95
+Created thread # 96
+Created thread # 97
+Created thread # 98
+Created thread # 99
+Created thread # 100
+Created thread # 101
+Created thread # 102
+Created thread # 103
+Created thread # 104
+Created thread # 105
+Created thread # 106
+Created thread # 107
+Created thread # 108
+Created thread # 109
+Created thread # 110
+Created thread # 111
+Created thread # 112
+Created thread # 113
+Created thread # 114
+Created thread # 115
+Created thread # 116
+Created thread # 117
+Created thread # 118
+Created thread # 119
+Thread #15 end of input stream, nextChar=-1
+Completed: thread #19
+Completed: thread #2
+Completed: thread #35
+Completed: thread #22
+Completed: thread #38
+Completed: thread #23
+Completed: thread #54
+Completed: thread #42
+Completed: thread #59
+Completed: thread #55
+Completed: thread #43
+Completed: thread #39
+Completed: thread #37
+Completed: thread #52
+Completed: thread #75
+Completed: thread #41
+Completed: thread #27
+Completed: thread #25
+Completed: thread #40
+Completed: thread #30
+Completed: thread #56
+Completed: thread #64
+Completed: thread #48
+Completed: thread #28
+Completed: thread #24
+Completed: thread #60
+Completed: thread #36
+Completed: thread #73
+Completed: thread #26
+Completed: thread #51
+Completed: thread #32
+Completed: thread #62
+Completed: thread #34
+Completed: thread #21
+Completed: thread #44
+Completed: thread #58
+Completed: thread #33
+Completed: thread #50
+Completed: thread #57
+Completed: thread #90
+Completed: thread #49
+Completed: thread #81
+Completed: thread #46
+Completed: thread #31
+Completed: thread #76
+Completed: thread #45
+Completed: thread #61
+Completed: thread #65
+Completed: thread #79
+Completed: thread #84
+Completed: thread #47
+Completed: thread #53
+Completed: thread #66
+Completed: thread #77
+Completed: thread #80
+Completed: thread #72
+Completed: thread #63
+Completed: thread #69
+Completed: thread #92
+Completed: thread #68
+Completed: thread #87
+Completed: thread #74
+Completed: thread #95
+Completed: thread #71
+Completed: thread #91
+Completed: thread #82
+Completed: thread #89
+Completed: thread #70
+Completed: thread #94
+Completed: thread #78
+Completed: thread #93
+Completed: thread #85
+Completed: thread #67
+Completed: thread #86
+Completed: thread #105
+Completed: thread #83
+Completed: thread #15
+Completed: thread #97
+Completed: thread #100
+Completed: thread #99
+Completed: thread #98
+Completed: thread #101
+Completed: thread #88
+Completed: thread #102
+Completed: thread #108
+Completed: thread #104
+Completed: thread #113
+Completed: thread #96
+Completed: thread #116
+Completed: thread #115
+Completed: thread #112
+Completed: thread #111
+Completed: thread #0
+Completed: thread #114
+Completed: thread #110
+Completed: thread #117
+Completed: thread #103
+Completed: thread #109
+Completed: thread #107
+Completed: thread #13
+Completed: thread #1
+Joined thread # 1
+Joined thread # 2
+Completed: thread #6
+Completed: thread #119
+Completed: thread #5
+Completed: thread #106
+Completed: thread #11
+Completed: thread #4
+Completed: thread #9
+Completed: thread #18
+Completed: thread #118
+Completed: thread #7
+Completed: thread #10
+Completed: thread #20
+Completed: thread #12
+Completed: thread #8
+Completed: thread #29
+Completed: thread #3
+Joined thread # 3
+Joined thread # 4
+Joined thread # 5
+Joined thread # 6
+Joined thread # 7
+Joined thread # 8
+Joined thread # 9
+Joined thread # 10
+Joined thread # 11
+Joined thread # 12
+Joined thread # 13
+Completed: thread #17
+Completed: thread #16
+Completed: thread #14
+Joined thread # 14
+Joined thread # 15
+Joined thread # 16
+Joined thread # 17
+Joined thread # 18
+Joined thread # 19
+Joined thread # 20
+Joined thread # 21
+Joined thread # 22
+Joined thread # 23
+Joined thread # 24
+Joined thread # 25
+Joined thread # 26
+Joined thread # 27
+Joined thread # 28
+Joined thread # 29
+Joined thread # 30
+Joined thread # 31
+Joined thread # 32
+Joined thread # 33
+Joined thread # 34
+Joined thread # 35
+Joined thread # 36
+Joined thread # 37
+Joined thread # 38
+Joined thread # 39
+Joined thread # 40
+Joined thread # 41
+Joined thread # 42
+Joined thread # 43
+Joined thread # 44
+Joined thread # 45
+Joined thread # 46
+Joined thread # 47
+Joined thread # 48
+Joined thread # 49
+Joined thread # 50
+Joined thread # 51
+Joined thread # 52
+Joined thread # 53
+Joined thread # 54
+Joined thread # 55
+Joined thread # 56
+Joined thread # 57
+Joined thread # 58
+Joined thread # 59
+Joined thread # 60
+Joined thread # 61
+Joined thread # 62
+Joined thread # 63
+Joined thread # 64
+Joined thread # 65
+Joined thread # 66
+Joined thread # 67
+Joined thread # 68
+Joined thread # 69
+Joined thread # 70
+Joined thread # 71
+Joined thread # 72
+Joined thread # 73
+Joined thread # 74
+Joined thread # 75
+Joined thread # 76
+Joined thread # 77
+Joined thread # 78
+Joined thread # 79
+Joined thread # 80
+Joined thread # 81
+Joined thread # 82
+Joined thread # 83
+Joined thread # 84
+Joined thread # 85
+Joined thread # 86
+Joined thread # 87
+Joined thread # 88
+Joined thread # 89
+Joined thread # 90
+Joined thread # 91
+Joined thread # 92
+Joined thread # 93
+Joined thread # 94
+Joined thread # 95
+Joined thread # 96
+Joined thread # 97
+Joined thread # 98
+Joined thread # 99
+Joined thread # 100
+Joined thread # 101
+Joined thread # 102
+Joined thread # 103
+Joined thread # 104
+Joined thread # 105
+Joined thread # 106
+Joined thread # 107
+Joined thread # 108
+Joined thread # 109
+Joined thread # 110
+Joined thread # 111
+Joined thread # 112
+Joined thread # 113
+Joined thread # 114
+Joined thread # 115
+Joined thread # 116
+Joined thread # 117
+Joined thread # 118
+Joined thread # 119
+May 24 21:38:46 ..... finished mapping
+RAM after mapping:
+VmPeak:	52316316 kB; VmSize:	51273796 kB; VmHWM:	42921028 kB; VmRSS:	42918960 kB; 
+ALL DONE!
