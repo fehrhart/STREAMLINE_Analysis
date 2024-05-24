@@ -14,9 +14,9 @@ module load STAR
 
 # genome indexing
 
-STAR --runThreadN 16 \ 
+STAR --runThreadN 50 \ 
      --runMode genomeGenerate \
-     --genomeDir ./genome_index3_output/ \
-     --genomeFastaFiles ./GRCh37.p13.genome.fa \
-     --sjdbGTFfile ./gencode.v19.annotation.gff3 \
+     --genomeDir ./STAR_OutPut/ \
+     --genomeFastaFiles ./S \
+     --sjdbGTFfile ./gencode.v45.annotation.gtf \
      --sjdbOverhang 150\
