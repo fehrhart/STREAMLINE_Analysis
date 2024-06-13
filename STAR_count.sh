@@ -3,7 +3,7 @@ do
 
     R1=$i
     R2=${i/R1/R2}
-    sample_name=$(echo $i| cut -d'/' -f 7)
+    sample_name=$(echo $i)
     sample_name=$(echo ${sample_name%R1_001.fastq.gz})
     out_dir=~/persistent/Results/${sample_name}
 
